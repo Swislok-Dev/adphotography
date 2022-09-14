@@ -4,10 +4,10 @@ import {img1, img2, img3, img4, img5, img6, coolGalaxy, blackHeart} from "../ass
 function Home() {
   return (
     <div className="home">
-      <h1>Home Component</h1>
       <figure>
         <img src={img1} alt="img1" />
         <img src={img2} alt="img2" />
+        <img src={img3} alt="img3" />
         <img src={img3} alt="img3" />
         <img src={img4} alt="img4" />
         <img src={img5} alt="img5" />
