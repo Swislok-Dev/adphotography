@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react"
+import Navbar from "./Navbar"
 
 function Header() {
   return (
     <header className="header">
-      <h3>Happy Snap Photography</h3>
+      <div className="header-content">
+        <h3>Happy Snap Photography</h3>
+        <Navbar />
+      </div>
     </header>
   )
 }
