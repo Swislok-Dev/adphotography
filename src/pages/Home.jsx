@@ -6,7 +6,6 @@ import {
   img4,
   img5,
   img6,
-  coolGalaxy,
   blackHeart,
 } from "../assets/photos/index.js"
 
@@ -25,7 +24,6 @@ function Home() {
       </figure>
       <figure id="baby">
         <img id="img7" src={img6} alt="img6" />
-        <img id="img8" src={coolGalaxy} alt="cool galaxy" />
         <img id="img9" src={blackHeart} alt="black heart logo" />
       </figure>
     </div>
