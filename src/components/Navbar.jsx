@@ -23,17 +23,32 @@ function Navbar() {
       >
         <li className="nav-item">
           <a href="#1" className="nav-link">
-            About
+            Family
           </a>
         </li>
         <li className="nav-item">
           <a href="#2" className="nav-link">
-            About
+            Couples
           </a>
         </li>
         <li className="nav-item">
           <a href="#3" className="nav-link">
-            About
+            Baby
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#3" className="nav-link">
+            Wedding
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#3" className="nav-link">
+            Art Prints
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="#3" className="nav-link">
+            Contact
           </a>
         </li>
       </ul>

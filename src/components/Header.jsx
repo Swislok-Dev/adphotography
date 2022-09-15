@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <h3>Happy Snap Photography</h3>
+        <h3>DAHLIA DELIGHTS PHOTOGRAPHY</h3>
         <Navbar />
       </div>
     </header>
