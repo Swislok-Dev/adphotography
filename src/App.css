@@ -38,6 +38,10 @@ body {
 
 /* Home */
 
+.break  {
+  height: 100vh;
+}
+
 .home figure {
   display: flex;
   flex-direction: row;

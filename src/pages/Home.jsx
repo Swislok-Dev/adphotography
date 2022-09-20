@@ -1,30 +1,27 @@
-import React from "react"
-import {
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  blackHeart,
-} from "../assets/photos/index.js"
+import React from "react";
+import "lazysizes";
+import * as pics from "../assets/photos/index"
 
 function Home() {
   return (
     <div className="home">
       <figure id="family">
-        <img id="img1" src={img1} alt="img1" />
-        <img id="img2" src={img2} alt="img2" />
-        <img id="img3" src={img3} alt="img3" />
+        <img src={pics.img2} alt="img2" className="lazyload" />
+        <img src={pics.img3} alt="img3" className="lazyload" />
       </figure>
+
       <figure id="couples">
-        <img id="img4" src={img3} alt="img3" />
-        <img id="img5" src={img4} alt="img4" />
-        <img id="img6" src={img5} alt="img5" />
+        <img data-src={pics.img5} alt="img5" className="lazyload" />
       </figure>
+
       <figure id="baby">
-        <img id="img7" src={img6} alt="img6" />
-        <img id="img9" src={blackHeart} alt="black heart logo" />
+        <img data-src={pics.img1} alt="img1" className="lazyload" />
+        <img data-src={pics.img4} alt="img4" className="lazyload" />
+        <img data-src={pics.img6} alt="img6" className="lazyload" />
+      </figure>
+
+      <figure id="wedding">
+        <img data-src={pics.bh} alt="bh" className="lazyload" />
       </figure>
     </div>
   )
