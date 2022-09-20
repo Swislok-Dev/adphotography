@@ -1,21 +1,27 @@
-import React from "react"
-const ShowImage = React.lazy(() => import("../components/ShowImage.jsx"))
+import React from "react";
+import "lazysizes";
+import * as pics from "../assets/photos/index"
 
 function Home() {
-
   return (
     <div className="home">
       <figure id="family">
-        <ShowImage imagesPath="../assets/photos/family" />
+        <img src={pics.img2} alt="img2" className="lazyload" />
+        <img src={pics.img3} alt="img3" className="lazyload" />
       </figure>
+
       <figure id="couples">
-        <ShowImage imagesPath="../assets/photos/couples" />
+        <img data-src={pics.img5} alt="img5" className="lazyload" />
       </figure>
+
       <figure id="baby">
-        <ShowImage imagesPath="../assets/photos/baby" />
+        <img data-src={pics.img1} alt="img1" className="lazyload" />
+        <img data-src={pics.img4} alt="img4" className="lazyload" />
+        <img data-src={pics.img6} alt="img6" className="lazyload" />
       </figure>
+
       <figure id="wedding">
-        <ShowImage imagesPath="../assets/photos/wedding" />
+        <img data-src={pics.bh} alt="bh" className="lazyload" />
       </figure>
     </div>
   )
