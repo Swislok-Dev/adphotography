@@ -38,7 +38,7 @@ body {
 
 /* Home */
 
-.break  {
+.break {
   height: 100vh;
 }
 
@@ -48,8 +48,12 @@ body {
   flex-wrap: wrap;
 }
 
+figure:first-child {
+  margin-top: 25px;
+}
+
 figure img {
-  margin-top: 50px;
+  margin-top: 25px;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
