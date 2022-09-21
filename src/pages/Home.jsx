@@ -20,7 +20,8 @@ function Home() {
         <img data-src={pics.img6} alt="img6" className="lazyload" />
       </figure>
 
-      <figure id="wedding">
+      <figure id="wedding"></figure>
+      <figure id="art-prints">
         <img data-src={pics.bh} alt="bh" className="lazyload" />
       </figure>
     </div>
