@@ -1,5 +1,5 @@
-import React from "react";
-import "lazysizes";
+import React from "react"
+import "lazysizes"
 import * as pics from "../assets/photos/index"
 
 function Home() {

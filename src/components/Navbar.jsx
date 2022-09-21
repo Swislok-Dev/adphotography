@@ -15,8 +15,6 @@ function Navbar() {
     setIsActive(false)
   }
 
-  // className => "img9" is last image
-
   const scrollTo = (scrollId) => {
     const anchor = document.querySelector(`#${scrollId}`)
     anchor.scrollIntoView({
@@ -36,7 +34,7 @@ function Navbar() {
           <li className="nav-item">
             <a
               onClick={() => scrollTo("family")}
-              href="#1"
+              href="#/family"
               className="nav-link"
             >
               Family
@@ -45,21 +43,25 @@ function Navbar() {
           <li className="nav-item">
             <a
               onClick={() => scrollTo("couples")}
-              href="#2"
+              href="#/couples"
               className="nav-link"
             >
               Couples
             </a>
           </li>
           <li className="nav-item">
-            <a onClick={() => scrollTo("baby")} href="#3" className="nav-link">
+            <a
+              onClick={() => scrollTo("baby")}
+              href="#/baby"
+              className="nav-link"
+            >
               Baby
             </a>
           </li>
           <li className="nav-item">
             <a
               onClick={() => scrollTo("wedding")}
-              href="#3"
+              href="#/wedding"
               className="nav-link"
             >
               Wedding
@@ -68,7 +70,7 @@ function Navbar() {
           <li className="nav-item">
             <a
               onClick={() => scrollTo("art-prints")}
-              href="#3"
+              href="#/art-prints"
               className="nav-link"
             >
               Art Prints
@@ -77,7 +79,7 @@ function Navbar() {
           <li className="nav-item">
             <a
               onClick={() => scrollTo("contact")}
-              href="#3"
+              href="#/contact"
               className="nav-link"
             >
               Contact
