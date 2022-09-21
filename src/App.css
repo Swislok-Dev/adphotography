@@ -33,7 +33,7 @@ a {
 }
 
 body {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 }
 
 /* Home */
@@ -46,14 +46,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-figure:first-child {
-  margin-top: 25px;
+  padding-top: 50px;
 }
 
 figure img {
-  margin-top: 25px;
+  margin-bottom: 25px;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
