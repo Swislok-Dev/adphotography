@@ -16,13 +16,9 @@ section {
 .form-content {
   width: 60%;
   max-width: 600px;
+  min-width: 200px;
 }
 
-@media screen and (max-width: 600px) {
-  .form-content {
-    width: 80%;
-  }
-}
 
 .form-control {
   display: flex;
@@ -32,7 +28,7 @@ section {
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid grey;
   font-size: 18px;
   margin: 16px auto;
   line-height: 2em;
@@ -41,7 +37,8 @@ section {
 
 .form-control::placeholder,
 textarea.form-control::placeholder {
-  color: black;
+  z-index: -1;
+  color: grey;
   position: relative;
   left: 0;
   transition: left 0.4s ease, color 0.4s ease;
@@ -57,7 +54,7 @@ textarea.form-control::placeholder {
 
 button.submit {
   background-color: #4444;
-  cursor: point;
+  cursor: pointer;
   border: none;
   font-size: 20px;
   font-weight: bold;
@@ -86,4 +83,10 @@ button.submit {
 
 .honey {
   display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .form-content {
+    width: 80%;
+  }
 }
