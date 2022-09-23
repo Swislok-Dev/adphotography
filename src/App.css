@@ -1,5 +1,6 @@
 :root {
   --fonts: Helvetica, Geneva, Verdana, Tahoma, Georgia;
+  --contact-fonts: Georgia, Tahoma;
 }
 
 * {

@@ -1,3 +1,7 @@
+.contact * {
+  font-family: var(--contact-fonts);
+}
+
 section {
   width: 80%;
   min-height: 100vh;
@@ -18,7 +22,6 @@ section {
   max-width: 600px;
   min-width: 200px;
 }
-
 
 .form-control {
   display: flex;
