@@ -1,9 +1,13 @@
+:root {
+  --fonts: Helvetica, Geneva, Verdana, Tahoma, Georgia;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: Hevetica, Cambria, Cochin, Georgia
+  font-family: var(--fonts);
 }
 
 /* Universal Styles */
