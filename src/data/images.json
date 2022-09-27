@@ -1,0 +1,44 @@
+{
+  "family": [
+    {
+      "id": "img2",
+      "url": "../assets/images/family/img2Large.jpeg"
+    },
+    {
+      "id": "img3",
+      "url": "../assets/images/family/img3Large.jpeg"
+    }
+  ],
+  "couples": [
+    {
+      "id": "img5",
+      "url": "../assets/images/couples/img5Large.jpeg"
+    }
+  ],
+  "baby": [
+    {
+      "id": "img1",
+      "url": "../assets/images/baby/img1Large.jpeg"
+    },
+    {
+      "id": "img4",
+      "url": "../assets/images/baby/img4Large.jpeg"
+    },
+    {
+      "id": "img6",
+      "url": "../assets/images/baby/img6Large.jpeg"
+    }
+  ],
+  "wedding": [
+    {
+      "id": "BH-copy",
+      "url": "../assets/images/wedding/BH-copy.jpeg"
+    }
+  ],
+  "artPrints":[
+    {
+      "id": "BH",
+      "url": "../assets/images/artPrints/BLKHRT-Cover.jpeg"
+    }
+  ]
+}
