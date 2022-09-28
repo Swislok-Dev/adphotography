@@ -87,8 +87,6 @@ header {
 
 .nav-menu {
   position: fixed;
-  left: 0;
-  top: -100%;
   gap: 0;
   flex-direction: column;
   background-color: white;
@@ -132,6 +130,26 @@ header {
   background: black;
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 839px) {
+  .nav-menu {
+    right: 0;
+    top: -100%;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .nav-menu {
+    right: -100%;
+    top: 50px;
+  }
+
+  .nav-menu.active {
+    right: 0;
+    width: 50%;
+    height: fit-content;
+  }
 }
 
 @media screen and (max-width: 550px) {
