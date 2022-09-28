@@ -36,6 +36,16 @@ li {
 a {
   text-decoration: none;
   padding: 5px;
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:active {
+  color: red;
 }
 
 /* Home */
