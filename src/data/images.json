@@ -1,8 +1,8 @@
 {
   "family": [
     {
-      "id": "img2",
-      "url": "../assets/images/family/img2Large.jpeg"
+      "id": "img5",
+      "url": "../assets/images/couples/img5Large.jpeg"
     },
     {
       "id": "img3",
@@ -10,10 +10,6 @@
     }
   ],
   "couples": [
-    {
-      "id": "img5",
-      "url": "../assets/images/couples/img5Large.jpeg"
-    },
     {
       "id": "couples01",
       "url": "../assets/images/largeConvert/couples01.jpeg"
@@ -84,10 +80,5 @@
       "url": "../assets/images/largeConvert/wedding05.jpeg"
     }
   ],
-  "artPrints": [
-    {
-      "id": "BH",
-      "url": "../assets/images/artPrints/BLKHRT-Cover.jpeg"
-    }
-  ]
+  "artPrints": []
 }
