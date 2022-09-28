@@ -9,11 +9,11 @@ function App() {
   return (
     <div className="App">
       <ScrollToTop />
+      <Header />
       <React.Suspense fallback={<div>Loading...</div>}>
-        <Header />
         <Home />
-        <Contact />
       </React.Suspense>
+      <Contact />
     </div>
   )
 }
