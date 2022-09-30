@@ -8,10 +8,12 @@ const ShowImage = ({ imagesPath }) => {
         ? imagesPath.map((res) => {
             return (
               <img
+                src="../assets/images/Placeholder_view_vector.svg"
                 className="lazyload"
                 data-src={res.url}
                 alt={res.id}
                 key={res.id}
+                data-sizes="auto"
               />
             )
           })
