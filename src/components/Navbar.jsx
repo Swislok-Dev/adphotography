@@ -11,8 +11,10 @@ function Navbar() {
     return isActive ? "active" : null
   }
 
-  const removeHamburgerActive = () => {
-    setIsActive(false)
+  const removeHamburgerActive = (e) => {
+    if (e.target.nodeName === "A") {
+      setIsActive(false)
+    }
   }
 
   const scrollTo = (scrollId) => {
@@ -26,11 +28,8 @@ function Navbar() {
 
   return (
     <div>
-      <nav className="navbar">
-        <ul
-          onClick={removeHamburgerActive}
-          className={`nav-menu ${showActiveClass()}`}
-        >
+      <nav className="navbar" onClick={(e) => removeHamburgerActive(e)}>
+        <ul className={`nav-menu ${showActiveClass()}`}>
           <li className="nav-item">
             <a
               onClick={() => scrollTo("family")}
