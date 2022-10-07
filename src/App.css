@@ -48,6 +48,10 @@ a:active {
   color: red;
 }
 
+.header-link:active {
+  color: black;
+}
+
 /* Home */
 
 .break {
