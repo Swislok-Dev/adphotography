@@ -10,9 +10,9 @@ const ShowImage = ({ imagesPath }) => {
               <img
                 src="../assets/images/Placeholder_view_vector.svg"
                 className="lazyload"
-                data-src={res.url}
-                alt={res.id}
-                key={res.id}
+                data-src={res}
+                alt={res}
+                key={res}
                 data-sizes="auto"
               />
             )
