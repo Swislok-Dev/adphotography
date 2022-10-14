@@ -68,15 +68,6 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <a
-              onClick={() => scrollTo("art-prints")}
-              href="#/art-prints"
-              className="nav-link"
-            >
-              Art Prints
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
               onClick={() => scrollTo("contact")}
               href="#/contact"
               className="nav-link"
