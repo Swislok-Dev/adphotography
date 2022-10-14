@@ -48,8 +48,7 @@ function Contact() {
         <input
           type="hidden"
           name="_next"
-          // value="https://corymarker.com/"  enter for the redirect, usually back to the home page '/'
-          value="http://localhost:3000"
+          value="https://annadahlia.com"
         />
         <input type="hidden" name="_subject" value="Portfolio Reply" />
         <input type="hidden" name="_template" value="table" />
