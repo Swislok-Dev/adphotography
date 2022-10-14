@@ -5,11 +5,9 @@ import {
   couplesImages,
   babyImages,
   weddingImages,
-  artPrintImages,
 } from "../data/images.js"
 
 function Home() {
-
   return (
     <div className="home">
       <figure id="family">
@@ -26,9 +24,6 @@ function Home() {
 
       <figure id="wedding">
         <ShowImage imagesPath={weddingImages} />
-      </figure>
-      <figure id="art-prints">
-        <ShowImage imagesPath={artPrintImages} />
       </figure>
     </div>
   )

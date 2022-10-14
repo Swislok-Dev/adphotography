@@ -6,5 +6,4 @@ export const familyImages =  importAll(require.context('/public/assets/images/fa
 export const couplesImages =  importAll(require.context('/public/assets/images/couples', false, /\.(png|jpe?g|svg)$/));
 export const babyImages =  importAll(require.context('/public/assets/images/baby', false, /\.(png|jpe?g|svg)$/));
 export const weddingImages =  importAll(require.context('/public/assets/images/wedding', false, /\.(png|jpe?g|svg)$/));
-export const artPrintImages =  importAll(require.context('/public/assets/images/artPrints', false, /\.(png|jpe?g|svg)$/));
 
