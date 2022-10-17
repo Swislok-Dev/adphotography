@@ -9,17 +9,17 @@ import {
 
 function Home() {
   return (
-    <div className="home">
+    <div id="home" className="home">
+      <figure id="baby">
+        <ShowImage imagesPath={babyImages} />
+      </figure>
+
       <figure id="family">
         <ShowImage imagesPath={familyImages} />
       </figure>
 
       <figure id="couples">
         <ShowImage imagesPath={couplesImages} />
-      </figure>
-
-      <figure id="baby">
-        <ShowImage imagesPath={babyImages} />
       </figure>
 
       <figure id="wedding">

@@ -27,9 +27,18 @@ function Navbar() {
   }
 
   return (
-    <div>
+    <>
       <nav className="navbar" onClick={(e) => removeHamburgerActive(e)}>
         <ul className={`nav-menu ${showActiveClass()}`}>
+          <li className="nav-item">
+            <a
+              onClick={() => scrollTo("baby")}
+              href="#/baby"
+              className="nav-link"
+            >
+              Baby
+            </a>
+          </li>
           <li className="nav-item">
             <a
               onClick={() => scrollTo("family")}
@@ -46,15 +55,6 @@ function Navbar() {
               className="nav-link"
             >
               Couples
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              onClick={() => scrollTo("baby")}
-              href="#/baby"
-              className="nav-link"
-            >
-              Baby
             </a>
           </li>
           <li className="nav-item">
@@ -86,7 +86,7 @@ function Navbar() {
           <span className="bar"></span>
         </div>
       </nav>
-    </div>
+    </>
   )
 }
 

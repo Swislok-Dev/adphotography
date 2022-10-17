@@ -11,7 +11,7 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <a className="header-link" onClick={() => scrollTo("family")} href="#/">
+        <a className="header-link" onClick={() => scrollTo("home")} href="#/">
           <h3>ANNA DAHLIA PHOTOGRAPHY</h3>
         </a>
         <Navbar />

@@ -157,12 +157,12 @@ header {
   .nav-menu {
     right: -100%;
     top: 50px;
+    height: 100%;
   }
 
   .nav-menu.active {
     right: 0;
     width: 50%;
-    height: fit-content;
   }
 }
 
