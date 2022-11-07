@@ -1,30 +1,30 @@
-import React, { useState } from "react"
+import React, { useState } from 'react';
 
 function Navbar() {
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
 
   const onHamburgerActive = () => {
-    setIsActive((current) => !current)
-  }
+    setIsActive((current) => !current);
+  };
 
   const showActiveClass = () => {
-    return isActive ? "active" : null
-  }
+    return isActive ? 'active' : null;
+  };
 
   const removeHamburgerActive = (e) => {
-    if (e.target.nodeName === "A") {
-      setIsActive(false)
+    if (e.target.nodeName === 'A') {
+      setIsActive(false);
     }
-  }
+  };
 
   const scrollTo = (scrollId) => {
-    const anchor = document.querySelector(`#${scrollId}`)
+    const anchor = document.querySelector(`#${scrollId}`);
     anchor.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-    })
-  }
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  };
 
   return (
     <>
@@ -32,16 +32,7 @@ function Navbar() {
         <ul className={`nav-menu ${showActiveClass()}`}>
           <li className="nav-item">
             <a
-              onClick={() => scrollTo("baby")}
-              href="#/baby"
-              className="nav-link"
-            >
-              Baby
-            </a>
-          </li>
-          <li className="nav-item">
-            <a
-              onClick={() => scrollTo("family")}
+              onClick={() => scrollTo('family')}
               href="#/family"
               className="nav-link"
             >
@@ -50,7 +41,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <a
-              onClick={() => scrollTo("couples")}
+              onClick={() => scrollTo('couples')}
               href="#/couples"
               className="nav-link"
             >
@@ -59,7 +50,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <a
-              onClick={() => scrollTo("wedding")}
+              onClick={() => scrollTo('wedding')}
               href="#/wedding"
               className="nav-link"
             >
@@ -68,7 +59,16 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <a
-              onClick={() => scrollTo("contact")}
+              onClick={() => scrollTo('baby')}
+              href="#/baby"
+              className="nav-link"
+            >
+              Baby
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              onClick={() => scrollTo('contact')}
               href="#/contact"
               className="nav-link"
             >
@@ -87,7 +87,7 @@ function Navbar() {
         </div>
       </nav>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

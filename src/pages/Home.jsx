@@ -1,19 +1,15 @@
-import React from "react"
-import ShowImage from "../components/ShowImage"
+import React from 'react';
+import ShowImage from '../components/ShowImage';
 import {
   familyImages,
   couplesImages,
   babyImages,
   weddingImages,
-} from "../data/images.js"
+} from '../data/images.js';
 
 function Home() {
   return (
     <div id="home" className="home">
-      <figure id="baby">
-        <ShowImage imagesPath={babyImages} />
-      </figure>
-
       <figure id="family">
         <ShowImage imagesPath={familyImages} />
       </figure>
@@ -25,8 +21,11 @@ function Home() {
       <figure id="wedding">
         <ShowImage imagesPath={weddingImages} />
       </figure>
+      <figure id="baby">
+        <ShowImage imagesPath={babyImages} />
+      </figure>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
