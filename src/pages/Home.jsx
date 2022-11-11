@@ -6,6 +6,7 @@ import {
   babyImages,
   weddingImages,
 } from '../data/images.js';
+import '../styles/home.css';
 
 function Home() {
   return (
