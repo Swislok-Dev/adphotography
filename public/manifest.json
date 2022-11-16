@@ -1,11 +1,12 @@
 {
-  "short_name": "Anna Dahlia Photography",
+  "short_name": "Anna Dahlia",
   "name": "Anna Dahlia Photography",
+  "description": "Photography Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "sizes": "1500x1500 180x180",
+      "type": "image/png"
     }
   ],
   "start_url": ".",
