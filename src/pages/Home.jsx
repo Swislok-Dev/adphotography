@@ -7,6 +7,7 @@ import {
   weddingImages,
 } from '../data/images.js';
 import '../styles/home.css';
+import ScrollingText from '../components/ScrollingText';
 
 function Home() {
   return (
@@ -15,14 +16,21 @@ function Home() {
         <ShowImage imagesPath={familyImages} />
       </figure>
 
-      <figure id="couples">
+      <ScrollingText id="couples" title="COUPLES" />
+
+      <figure>
         <ShowImage imagesPath={couplesImages} />
       </figure>
 
-      <figure id="wedding">
+      <ScrollingText id="wedding" title="WEDDING" />
+
+      <figure>
         <ShowImage imagesPath={weddingImages} />
       </figure>
-      <figure id="baby">
+
+      <ScrollingText id="baby" title="BABY" />
+
+      <figure>
         <ShowImage imagesPath={babyImages} />
       </figure>
     </div>

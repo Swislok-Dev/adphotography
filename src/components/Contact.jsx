@@ -1,10 +1,22 @@
-import React from "react"
-import "../styles/contact.css"
+import React from 'react';
+import '../styles/contact.css';
+import { motion, useInView } from 'framer-motion';
 
 function Contact() {
+  const ref = React.useRef();
+  const isInView = useInView(ref, { once: true });
+
   return (
-    <section id="contact" className="contact">
-      <h2>Contact Me</h2>
+    <motion.section
+      id="contact"
+      className="contact"
+      style={{
+        transform: isInView ? 'none' : 'translateY(-200px)',
+        opacity: isInView ? 1 : 0,
+        transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+      }}
+    >
+      <h2 ref={ref}>Contact Me</h2>
       <form
         action="https://formsubmit.co/cfd14fcd11cb6dae8de22321c87a3d4a"
         method="POST"
@@ -45,16 +57,12 @@ function Contact() {
         {/* FormSubmit Attributes */}
         <input type="text" name="_honey" className="honey" />
         <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://annadahlia.com"
-        />
+        <input type="hidden" name="_next" value="https://annadahlia.com" />
         <input type="hidden" name="_subject" value="Portfolio Reply" />
         <input type="hidden" name="_template" value="table" />
       </form>
-    </section>
-  )
+    </motion.section>
+  );
 }
 
-export default Contact
+export default Contact;

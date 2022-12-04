@@ -6,14 +6,31 @@ figure {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  overflow: hidden;
+}
+
+figure:first-child {
   padding-top: 50px;
 }
 
 figure img {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
+}
+figure img:last-child {
+  margin-bottom: 0;
+}
+
+figcaption {
+  display: flex;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 5.5px 0;
+  justify-content: center;
+  overflow: hidden;
+  letter-spacing: 2px;
 }
 
 #home.active {
@@ -25,6 +42,6 @@ figure img {
     height: 90%;
     max-height: 100%;
     max-width: 1100px;
-    margin: 0 auto 25px;
+    margin: 0 auto 20px;
   }
 }
