@@ -12,7 +12,7 @@ import ScrollingText from '../components/ScrollingText';
 function Home() {
   return (
     <div id="home" className="home">
-      <figure id="family">
+      <figure id="#family">
         <ShowImage imagesPath={familyImages} />
       </figure>
 

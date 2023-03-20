@@ -1,6 +1,8 @@
+import Link from 'next/link';
+import ScrollLink from '../components/ScrollLink';
 import React, { useState } from 'react';
 
-function Navbar() {
+const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
   const onHamburgerActive = () => {
@@ -28,7 +30,28 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar" onClick={(e) => removeHamburgerActive(e)}>
+      <nav className="navbar">
+            
+            <ScrollLink href="/#family"><h1>ANNA DAHLIA PHOTOGRAPHY</h1></ScrollLink>
+            
+            <ul className={`nav-menu ${showActiveClass()}`}>
+              <ScrollLink href="/#family">family</ScrollLink>
+              <ScrollLink href="/#couples">couples</ScrollLink>
+              <ScrollLink href="/#wedding">wedding</ScrollLink>
+              <ScrollLink href="/#baby">baby</ScrollLink>
+              <ScrollLink href="/#contact">contact</ScrollLink>
+            </ul>
+
+            <div
+              onClick={onHamburgerActive}
+              className={`hamburger ${showActiveClass()}`}
+            >
+              <span className="bar"></span>
+              <span className="bar"></span>
+              <span className="bar"></span>
+            </div>
+          </nav>
+      {/* <nav className="navbar" onClick={(e) => removeHamburgerActive(e)}>
         <ul className={`nav-menu ${showActiveClass()}`}>
           <li className="nav-item">
             <a
@@ -85,9 +108,9 @@ function Navbar() {
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-      </nav>
+      </nav> */}
     </>
   );
-}
+};
 
 export default Navbar;
