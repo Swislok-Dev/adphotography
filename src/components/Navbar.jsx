@@ -31,72 +31,21 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-            
-            <ScrollLink href="/#family"><h1>ANNA DAHLIA PHOTOGRAPHY</h1></ScrollLink>
-            
-            <ul className={`nav-menu ${showActiveClass()}`}>
-              <ScrollLink href="/#family">family</ScrollLink>
-              <ScrollLink href="/#couples">couples</ScrollLink>
-              <ScrollLink href="/#wedding">wedding</ScrollLink>
-              <ScrollLink href="/#baby">baby</ScrollLink>
-              <ScrollLink href="/#contact">contact</ScrollLink>
-            </ul>
-
-            <div
-              onClick={onHamburgerActive}
-              className={`hamburger ${showActiveClass()}`}
-            >
-              <span className="bar"></span>
-              <span className="bar"></span>
-              <span className="bar"></span>
-            </div>
-          </nav>
-      {/* <nav className="navbar" onClick={(e) => removeHamburgerActive(e)}>
         <ul className={`nav-menu ${showActiveClass()}`}>
-          <li className="nav-item">
-            <a
-              onClick={() => scrollTo('family')}
-              href="#/family"
-              className="nav-link"
-            >
-              Family
-            </a>
+          <li>
+            <ScrollLink href="/#family">family</ScrollLink>
           </li>
-          <li className="nav-item">
-            <a
-              onClick={() => scrollTo('couples')}
-              href="#/couples"
-              className="nav-link"
-            >
-              Couples
-            </a>
+          <li>
+            <ScrollLink href="/#couples">couples</ScrollLink>
           </li>
-          <li className="nav-item">
-            <a
-              onClick={() => scrollTo('wedding')}
-              href="#/wedding"
-              className="nav-link"
-            >
-              Wedding
-            </a>
+          <li>
+            <ScrollLink href="/#wedding">wedding</ScrollLink>
           </li>
-          <li className="nav-item">
-            <a
-              onClick={() => scrollTo('baby')}
-              href="#/baby"
-              className="nav-link"
-            >
-              Baby
-            </a>
+          <li>
+            <ScrollLink href="/#baby">baby</ScrollLink>
           </li>
-          <li className="nav-item">
-            <a
-              onClick={() => scrollTo('contact')}
-              href="#/contact"
-              className="nav-link"
-            >
-              Contact
-            </a>
+          <li>
+            <ScrollLink href="/#contact">contact</ScrollLink>
           </li>
         </ul>
 
@@ -108,7 +57,7 @@ const Navbar = () => {
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
-      </nav> */}
+      </nav>
     </>
   );
 };
