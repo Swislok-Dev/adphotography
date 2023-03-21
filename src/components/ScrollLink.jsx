@@ -1,6 +1,6 @@
-import Link from "next/link"
+import Link from 'next/link';
 
-const ScrollLink = ({children, ...props}) => {
+const ScrollLink = ({ children, ...props }) => {
   const handleScroll = (e) => {
     e.preventDefault();
     const href = e.currentTarget.href;
@@ -16,7 +16,7 @@ const ScrollLink = ({children, ...props}) => {
     <Link {...props} className="nav-link" onClick={handleScroll}>
       {children}
     </Link>
-  )
-}
+  );
+};
 
-export default ScrollLink
+export default ScrollLink;

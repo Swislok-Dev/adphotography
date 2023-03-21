@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react';
 
 function ScrollToTop() {
   React.useEffect(() => {
     window.onbeforeunload = () => {
-      window.scrollTo(0, 0)
-    }
-  })
+      window.scrollTo(0, 0);
+    };
+  });
 
-  return null
+  return null;
 }
 
-export default ScrollToTop
+export default ScrollToTop;
