@@ -17,19 +17,21 @@ const HomePage = () => {
           <figure>
             <ShowImage imagesPath={familyImages} />
           </figure>
-
         </section>
-        <section id="couples">
+        <section>
+        <ScrollingText id="couples" title="COUPLES" />
           <figure>
             <ShowImage imagesPath={couplesImages} />
           </figure>
         </section>
-        <section id="wedding">
+        <section>
+        <ScrollingText id="wedding" title="WEDDING" />
           <figure>
             <ShowImage imagesPath={weddingImages} />
           </figure>
         </section>
-        <section id="baby">
+        <section>
+        <ScrollingText id="baby" title="BABY" />
           <figure>
             <ShowImage imagesPath={babyImages} />
           </figure>
