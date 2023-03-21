@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <ul className={`nav-menu ${showActiveClass()}`}>
+        <ul onClick={removeHamburgerActive} className={`nav-menu ${showActiveClass()}`}>
           <li>
             <ScrollLink href="/#family">family</ScrollLink>
           </li>
