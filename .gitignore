@@ -22,6 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# next.js files
-.next
-
+# next.js
+/.next/
+/out/
+.env
