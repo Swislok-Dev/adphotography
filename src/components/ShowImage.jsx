@@ -1,5 +1,5 @@
 import React from "react"
-import "lazysizes"
+import Image from "next/image"
 
 const ShowImage = ({ imagesPath }) => {
   return (
@@ -7,13 +7,14 @@ const ShowImage = ({ imagesPath }) => {
       {imagesPath
         ? imagesPath.map((res) => {
             return (
-              <img
-                src="../assets/images/Placeholder_view_vector.svg"
-                className="lazyload"
-                data-src={res}
+              <Image
+                src={res}
+                height={500}
+                width={500}
                 alt={res}
                 key={res}
-                data-sizes="auto"
+                sizes="(max-width: 768px) 100vw,
+                (max-width: 1200px) 50vw, 33vw"
               />
             )
           })
