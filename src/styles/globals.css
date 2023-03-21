@@ -45,11 +45,11 @@ li {
   justify-content: space-between;
 }
 
-section {
-  /* overflow: hidden; */
-  /* width: 100%; */
-  /* min-height: 100vh; */
-}
+/* section {
+   overflow: hidden; 
+   width: 100%; 
+   min-height: 100vh; 
+} */
 
 section:first-child {
   padding-top: 50px;
