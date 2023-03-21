@@ -1,10 +1,9 @@
 import React from 'react';
-import '../styles/contact.css';
 import { motion, useInView } from 'framer-motion';
 
 function Contact() {
   const ref = React.useRef();
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false });
 
   return (
     <motion.section

@@ -7,6 +7,7 @@ const ScrollLink = ({children, ...props}) => {
     const targetId = href.replace(/.*\#/, '');
     const elem = document.getElementById(targetId);
     elem.scrollIntoView({
+      alignToTop: true,
       behavior: 'smooth',
     });
   };

@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from '../components/Contact';
 import Layout from '../components/Layout';
 import ScrollingText from '../components/ScrollingText';
 import ShowImage from '../components/ShowImage';
@@ -19,24 +20,25 @@ const HomePage = () => {
           </figure>
         </section>
         <section>
-        <ScrollingText id="couples" title="COUPLES" />
+          <ScrollingText id="couples" title="COUPLES" />
           <figure>
             <ShowImage imagesPath={couplesImages} />
           </figure>
         </section>
         <section>
-        <ScrollingText id="wedding" title="WEDDING" />
+          <ScrollingText id="wedding" title="WEDDING" />
           <figure>
             <ShowImage imagesPath={weddingImages} />
           </figure>
         </section>
         <section>
-        <ScrollingText id="baby" title="BABY" />
+          <ScrollingText id="baby" title="BABY" />
           <figure>
             <ShowImage imagesPath={babyImages} />
           </figure>
         </section>
-        <section id="contact">Contact</section>
+
+        <Contact />
       </div>
     </Layout>
   );
