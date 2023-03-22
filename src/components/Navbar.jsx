@@ -1,6 +1,5 @@
-import Link from 'next/link';
-import ScrollLink from '../components/ScrollLink';
 import React, { useState } from 'react';
+import ScrollLink from '../components/ScrollLink';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -19,19 +18,13 @@ const Navbar = () => {
     }
   };
 
-  const scrollTo = (scrollId) => {
-    const anchor = document.querySelector(`#${scrollId}`);
-    anchor.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
-  };
-
   return (
     <>
       <nav className="navbar">
-        <ul onClick={removeHamburgerActive} className={`nav-menu ${showActiveClass()}`}>
+        <ul
+          onClick={removeHamburgerActive}
+          className={`nav-menu ${showActiveClass()}`}
+        >
           <li>
             <ScrollLink href="/#family">family</ScrollLink>
           </li>

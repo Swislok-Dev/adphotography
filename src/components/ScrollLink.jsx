@@ -1,6 +1,7 @@
+import React from 'react'
 import Link from 'next/link';
 
-const ScrollLink = ({ children, ...props }) => {
+const ScrollLink = ({ children, props }) => {
   const handleScroll = (e) => {
     e.preventDefault();
     const href = e.currentTarget.href;
