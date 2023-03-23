@@ -6,12 +6,15 @@ function ScrollingText({ id, title }) {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
-  const x = useTransform(scrollYProgress, [0, 1], [-200, 200]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0, 1, 0]);
+  const opacity = useTransform(
+    scrollYProgress,
+    [0, 0.3, 0.9, 1],
+    [0, 1, 0.7, 0]
+  );
 
   return (
     <div ref={ref} style={{ overflow: 'hidden' }}>
-      <motion.figcaption style={{ opacity, x }} id={id}>
+      <motion.figcaption style={{ opacity }} id={id}>
         {title}
       </motion.figcaption>
     </div>
