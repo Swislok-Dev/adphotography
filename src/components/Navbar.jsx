@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ScrollLink from '../components/ScrollLink';
+import { NavbarContext } from './contexts/Navbar/index';
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [state, dispatch] = React.useContext(NavbarContext);
 
   const onHamburgerActive = () => {
-    setIsActive((current) => !current);
+    dispatch({ type: 'toggle_button' });
   };
 
   const showActiveClass = () => {
-    return isActive ? 'active' : null;
+    return state.active ? 'active' : null;
   };
 
   const removeHamburgerActive = (e) => {
     if (e.target.nodeName === 'A') {
-      setIsActive(false);
+      dispatch({ type: 'toggle_button' });
     }
   };
 
@@ -46,9 +47,9 @@ const Navbar = () => {
           onClick={onHamburgerActive}
           className={`hamburger ${showActiveClass()}`}
         >
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          <span className={`bar ${showActiveClass()}`}></span>
+          <span className={`bar ${showActiveClass()}`}></span>
+          <span className={`bar ${showActiveClass()}`}></span>
         </div>
       </nav>
     </>
