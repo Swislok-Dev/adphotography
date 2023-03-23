@@ -104,7 +104,7 @@ ul.nav-menu {
 .nav-menu.active {
   top: 50px;
   opacity: 1;
-  pointer-events:all;
+  pointer-events: all;
 }
 
 .nav-link {
@@ -114,6 +114,7 @@ ul.nav-menu {
 .hamburger {
   display: block;
   cursor: pointer;
+  z-index: 1;
 }
 
 .hamburger.active .bar:nth-child(1) {
@@ -138,14 +139,14 @@ ul.nav-menu {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 839px) {
+@media screen and (max-width: 439px) {
   .nav-menu {
     right: 0;
     top: -100%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 439px) and (max-width: 1080px) {
   .nav-menu {
     right: -100%;
     top: 4rem;
@@ -156,7 +157,7 @@ ul.nav-menu {
   .nav-menu.active {
     right: 10px;
     top: 4rem;
-    width: clamp(30%, 4vw, 500px);
+    width: clamp(35%, 3vw, 400px);
   }
 }
 
