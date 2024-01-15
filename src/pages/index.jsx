@@ -1,5 +1,5 @@
 import React from 'react';
-import Contact from '../components/Contact';
+// import Contact from '../components/Contact';
 import Layout from '../components/Layout';
 import ScrollingText from '../components/ScrollingText';
 import ShowImage from '../components/ShowImage';
@@ -38,7 +38,7 @@ const HomePage = () => {
           </figure>
         </section>
 
-        <Contact />
+        {/* <Contact /> */}
       </div>
     </Layout>
   );
