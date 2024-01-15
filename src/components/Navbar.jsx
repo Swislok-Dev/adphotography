@@ -38,9 +38,9 @@ const Navbar = () => {
           <li>
             <ScrollLink href="/#baby">baby</ScrollLink>
           </li>
-          <li>
+          {/* <li>
             <ScrollLink href="/#contact">contact</ScrollLink>
-          </li>
+          </li> */}
         </ul>
 
         <div
